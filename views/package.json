@@ -1,0 +1,18 @@
+{
+  "name": "ajd",
+  "version": "1.0.0",
+  "description": "a source to cultivate new Full Stack Developers in Austin through mentorship and resources",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "developer",
+    "austin",
+    "resource",
+    "mentor",
+    "mentee"
+  ],
+  "author": "Booth Kittson Philip Cook Peter Guerrero Fatma Tarlaci",
+  "license": "ISC"
+}
