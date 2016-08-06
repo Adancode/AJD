@@ -1,0 +1,23 @@
+{
+  "name": "ajd",
+  "version": "1.0.0",
+  "description": "![](/public/images/readmeImages/ajdtri.png?raw=true)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftarlaci/AJD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ftarlaci/AJD/issues"
+  },
+  "homepage": "https://github.com/ftarlaci/AJD#readme",
+  "dependencies": {
+    "sequelize": "^3.23.6"
+  }
+}
