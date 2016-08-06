@@ -1,0 +1,169 @@
+
+/* color scheme
+HSL  
+	$color1: hsla(200%, 100%, 99%, 1);
+	$color2: hsla(200%, 9%, 20%, 1);
+	$color3: hsla(191%, 55%, 53%, 1);
+	$color4: hsla(201%, 38%, 29%, 1);
+	$color5: hsla(203%, 17%, 51%, 1);
+RGB 
+	$color1: rgba(249, 253, 255, 1);
+	$color2: rgba(47, 53, 56, 1);
+	$color3: rgba(70, 177, 201, 1);
+	$color4: rgba(46, 82, 102, 1);
+	$color5: rgba(110, 136, 152, 1);
+
+hex
+	#fafdff (white)
+	#2e3538 (gray)
+	#45b1c9 (light blue)
+	#2e5266 (pale blue)
+	#6d8797 (between light blue & pale blue)
+*/
+
+/*--------Mission Page-------------------------------------------*/
+
+#jumbotronmission{
+	height: 200px;
+}
+
+#missiontext {
+	font-size: 20px;
+	text-align: center;
+}
+
+/*--------Team Page-------------------------------------------*/
+#teamcircles {
+	margin-top: 40px;
+}
+
+
+.circle {
+	width: 300px;
+	height: 300px;
+	border: 7px solid #546e7a;
+}
+
+.card-title {
+	color:#fdd835;	
+}
+
+#teambanner {
+	width: 100%;
+	text-align: center;
+	color: black;
+	background-color: #fdd835; 
+}
+
+
+
+
+/*--------Home Page & All Pages-------------------------------------------*/
+
+
+#nav {
+	background-color: #fafdff;
+	font-size: 24px;
+}
+
+#jumbotron {
+	height: auto;
+	background-color: #fdd835;
+	/*color: #2e3538;*/
+	font-family: 'cooper';	
+}
+
+
+
+
+
+
+body{
+	background-color: #6d8797;
+	color: #fafdff;
+	font-family: ProximaNova-Light, tahoma, verdana, arial, sans-serif;
+	/*background-color:#F5F5DC;*/
+
+}
+
+
+
+#hmPgIntro {
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+
+#ajd_logo{	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+#hmPgMain{
+	height: 500px;
+	margin-bottom: 50px;
+	border-bottom-color: #2e3538;
+	font-size: 20px;
+}
+
+
+#hmPgcard {
+	background-color: #2e3538;
+	color: #fafdff;
+	text-align: center;
+	height: 400px;
+}
+
+.card-content {
+	height: 250px;
+}
+
+#cardfont {
+	font-size: 65px;
+}
+.cardtitle {
+	text-align: center;
+	font-size: 24px;
+}
+
+#icon{
+	color: #fdd835;
+	font-size: 75px;
+	text-align: center;
+    vertical-align: middle;
+    padding-left: 35%;
+}
+
+#chooseStack {
+	display: block;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	font-size: 5px;
+}
+
+
+#stacks {
+	margin-top: 5%;
+	margin-bottom: auto;
+}
+
+
+
+.lean-overlay {
+/*position: fixed;*/
+z-index: 500;
+top: 100px;
+left: 100px;
+height:30%;
+width:30%;
+background: #fafdff;
+/*display: none;*/
+}
+
+
+
+
+
