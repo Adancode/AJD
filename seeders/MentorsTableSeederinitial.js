@@ -9,14 +9,12 @@ module.exports = {
         email: 'betty@coderevolution.com',
         password: sha1('password'),
         githubLink: 'http://github.com/bettyc',
-        photoLink:'',
         skillSet1:'mean',
         skillSet2:'mern',
-        skillSet3:NULL,
         bio:'Hi, I\'m Betty and I\'ve been coding since I was three.',
         userWebLink:'http://mybettyweb.com',
-        mentorRating:3,
-        menteeID:NULL
+        mentorRating:3
+
       },
       {
         nameFirst: 'Cecile',
@@ -24,14 +22,12 @@ module.exports = {
         email: 'cjd@coderevolution.com',
         password: sha1('password'),
         githubLink: 'http://github.com/diakonova',
-        photoLink:NULL,
         skillSet1:'lamp',
         skillSet2:'mern',
-        skillSet3:NULL,
         bio:'Fully versed in both LAMP and MERN stacks.',
         userWebLink:'http://comecodewithme.code',
-        mentorRating:3,
-        menteeID:NULL
+        mentorRating:3
+      
       }
       ], {})
   },
