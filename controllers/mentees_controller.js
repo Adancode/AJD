@@ -1,5 +1,5 @@
 /*
-Here is where you create all the functions that will do the routing for your app, and the logic of each route.
+This creates all the functions that will do the routing for the app as well as the logic of each route.
 */
 
 var express = require('express');
@@ -22,7 +22,7 @@ router.get('/mentees', function(req,res) {
 router.post('/mentees/create', function(req,res) {
 
 	var newMentee = {
-		nameLast: req.body.nameFirst,
+		nameFirst: req.body.nameFirst,
 		nameLast: req.body.nameLast,
 		email: req.body.email,
 		githubLink: req.body.githubLink,
