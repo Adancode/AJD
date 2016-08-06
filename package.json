@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ftarlaci/AJD#readme",
   "dependencies": {
+    "express-handlebars": "^3.0.0",
     "sequelize": "^3.23.6"
   }
 }
