@@ -1,6 +1,3 @@
-/*
-Here is where you create all the functions that will do the routing for your app, and the logic of each route.
-*/
 
 var express = require('express');
 var router = express.Router();
@@ -9,7 +6,7 @@ var app = express();
 var methodOverride = require('method-override');
 var mentees = require('../webmodels/mentees');
 var mentors = require('../webmodels/mentors');
-
+var connection = require('../config/connection.js');
 mentees.sync();
 
 router.get('/mentees', function(req,res) {

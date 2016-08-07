@@ -21,8 +21,8 @@ var Mentees = sequelize.define('Mentees', {
     password: Sequelize.STRING(40),
     githubLink: Sequelize.STRING,
     photoLink: Sequelize.STRING,
-    mentorID: DataTypes.INTEGER,
-    skillSetRequested: DataTypes.STRING    
+    mentorID: Sequelize.INTEGER,
+    skillSetRequested: Sequelize.STRING    
 },{
     underscored: true,
     freezeTableName: true,

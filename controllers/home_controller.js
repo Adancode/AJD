@@ -4,8 +4,6 @@ var bodyParser = require('body-parser');
 var app = express();
 var methodOverride = require('method-override');
 
-
-
 router.get('/', function(req,res) {
 	res.render('home');
 });
