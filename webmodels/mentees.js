@@ -26,7 +26,6 @@ var Mentees = sequelize.define('Mentees', {
 },{
     underscored: true,
     freezeTableName: true,
-    tableName: 'mentees',
     classMethods: {
       associate: function(models) {
         Mentees.belongsTo(models.Mentors, {
