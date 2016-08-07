@@ -6,7 +6,7 @@ var path = require('path');
 
 //app.use(express.static(path.join(__dirname, 'app/public')));
 app.use(express.static(path.normalize(path.join(__dirname, 'app/public'))));
-//var PORT = process.env.PORT || 8080;//must use this for heroku deployment
+var PORT = process.env.PORT || 8080;//must use this for heroku deployment
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -21,6 +21,6 @@ var mentorsController = require('./controllers/mentors_controller.js');
 //app.use('/', menteesController);
 app.use('/', mentorsController);
 
-app.listen(3010, function() {
-  console.log('Listening on port ') // + PORT)
+app.listen(PORT, function() {
+  console.log('Listening on port ' + PORT);
 })
