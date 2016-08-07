@@ -8,6 +8,12 @@ var path = require('path');
 app.use(express.static(path.normalize(path.join(__dirname, 'app/public'))));
 var PORT = process.env.PORT || 8080;//must use this for heroku deployment
 
+var exphbs = require('express-handlebars');
+app.engine('handlebars', exphbs({
+    defaultLayout: 'main'
+}));
+app.set('view engine', 'handlebars');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
