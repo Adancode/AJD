@@ -21,11 +21,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
-//var homeController = require('./controllers/home_controller.js');
+var homeController = require('./controllers/home_controller.js');
 var menteesController = require('./controllers/mentees_controller.js');
 var mentorsController = require('./controllers/mentors_controller.js');
 
-//app.use('/', homeController);
+app.use('/', homeController);
 app.use('/', menteesController);
 app.use('/', mentorsController);
 
