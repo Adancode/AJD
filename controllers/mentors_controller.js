@@ -35,8 +35,12 @@ router.post('/mentors/create', function(req,res) {
 		nameLast: req.body.nameLast,
 		email: req.body.email,
 		githubLink: req.body.githubLink,
+		photoLink: req.body.photoLink,
+		password: req.body.password, //don't know if this is correct
 		skillSet1: req.body.skillSet1,
+		skillLevel1: req.body.skillLevel1,
 		skillSet2: req.body.skillSet2,
+		skillLevel2: req.body.skillLevel2,
 		bio: req.body.bio,
 		userWebLink: req.body.userWebLink
 	}

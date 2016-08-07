@@ -23,8 +23,9 @@ router.get('/mentees', function(req,res) {
 
 router.post('/mentees/create', function(req,res) {
 	var newMentee = {
-		nameLast: req.body.nameFirst,
+		nameFirst: req.body.nameFirst,
 		nameLast: req.body.nameLast,
+		password: req.body.password, //don't know if this is correct
 		email: req.body.email,
 		githubLink: req.body.githubLink,
 		photoLink: req.photoLink,
