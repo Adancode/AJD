@@ -9,16 +9,26 @@ module.exports = function(sequelize, DataTypes) {
     githubLink: DataTypes.STRING,
     photoLink: DataTypes.STRING,
     skillSet1: DataTypes.STRING,
+    skillLevel1: DataTypes.INTEGER,
     skillSet2: DataTypes.STRING,
-    skillSet3: DataTypes.STRING,
+    skillLevel2: DataTypes.INTEGER,
     bio: DataTypes.STRING(164),
     userWebLink: DataTypes.STRING,
     mentorRating: DataTypes.INTEGER,
     menteeID: DataTypes.INTEGER
-  }, {
+  }, 
+  {
+    underscored: true,
+    freezeTableName: true,
+    tableName: 'mentees',
     classMethods: {
       associate: function(models) {
-        // associations can be defined here
+        Mentees.belongsTo(models.Mentors, {
+          onDelete: "CASCADE",
+          foreignKey: {
+            allowNull: false
+          }
+        }
       }
     }
   });

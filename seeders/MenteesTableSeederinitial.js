@@ -12,8 +12,9 @@ module.exports = {
       {
         nameFirst: 'Andrew',
         nameLast: 'W.K.',
-        email: 'andrew@codeandrewwk.com.com',
-        password: sha1('password')
+        email: 'andrew@codeandrewwk.com',
+        password: sha1('password'),
+        photoLink: 'public/fakemale1.png'
       }
       ], {});
   },
