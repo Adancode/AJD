@@ -20,7 +20,6 @@ module.exports = function(sequelize, DataTypes) {
   {
     underscored: true,
     freezeTableName: true,
-    tableName: 'mentees',
     classMethods: {
       associate: function(models) {
         Mentees.belongsTo(models.Mentors, {
