@@ -12,9 +12,8 @@ router.get('/mentors', function(req,res) {
 	console.log('winning!');
 	var foundMentors = mentors.findAll({attributes:['nameFirst', 'nameLast', 'photoLink','bio','userWebLink']});//sequelize findAll or findById
 	foundMentors.then(function(data){ //then is the built in function of a promise - sequelize has promises	
-		res.render('mentormatch');
-		//res.send(data);
-		console.log(data);
+		var hbsObject = {mentors : data};
+		res.render('mentormatch', hbsObject);
 	});
 });
 
