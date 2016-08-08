@@ -8,6 +8,8 @@ var whichConnection = {
 		database: "c9"
 	}	
   }
+  //Jaws has an environment var that holds the credentials so we don't have to 
+  //expose them here
 if(process.env.JAWSDB_URL){
 	var connection = mysql.createConnection( process.env.JAWSDB_URL);
 }
