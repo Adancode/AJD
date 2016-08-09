@@ -6,7 +6,6 @@ var app = express();
 var methodOverride = require('method-override');
 var mentees = require('../webmodels/mentees');
 var mentors = require('../webmodels/mentors');
-var connection = require('../config/connection.js');
 mentees.sync();
 
 router.get('/mentees', function(req,res) {
