@@ -21,13 +21,26 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
+app.use('/public', express.static('public'));//this works homepage with images peter 
+app.use(express.static(path.join(__dirname, 'public'))); //this works for multiple pages when pages are placed in public folder no images peter
+
+
 var homeController = require('./controllers/home_controller.js');
 var menteesController = require('./controllers/mentees_controller.js');
 var mentorsController = require('./controllers/mentors_controller.js');
 
+
+
 app.use('/', homeController);
 app.use('/', menteesController);
 app.use('/', mentorsController);
+// app.use('/static', express.static(__dirname + '/public')); //test routes
+
+
+
+
+
+
 
 app.listen(PORT, function() {
   console.log('Listening on port ' + PORT);
