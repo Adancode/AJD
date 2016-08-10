@@ -10,7 +10,7 @@ mentors.sync(); //makes sure the table is there
 
 router.get('/mentors', function(req,res) {
 	console.log('winning!');
-	var foundMentors = mentors.findAll({attributes:['nameFirst', 'nameLast', 'photoLink','bio','userWebLink']});//sequelize findAll or findById
+	var foundMentors = mentors.findAll({attributes:['nameFirst', 'nameLast', 'photoLink', 'githubLink','bio','userWebLink']});//sequelize findAll or findById
 	foundMentors.then(function(data){ //then is the built in function of a promise - sequelize has promises	
 		var hbsObject = {mentors : data};
 		res.render('mentormatch', hbsObject);
