@@ -1,10 +1,21 @@
-<h1> HI BOOTH</h1>
-
 <ul>
 	{{#each mentors}}
-		<li>
-			<p> First Name: {{this.nameFirst}} </p>
-			<p> Last Name: {{this.nameLast}}</p>
-		</li>
+		<div class="col s12 m7">
+		    <h2 class="header">{{this.nameFirst}} {{this.nameLast}}</h2>
+		    <div class="card horizontal">
+		      <div class="card-image">
+		        <img src="{{this.photoLink}}">
+		      </div>
+		      <div class="card-stacked">
+		        <div class="card-content">
+		          <p style = "color:black">INSERT TEXT HERE</p>
+		          <p style = "color:black">INSERT TEXT HERE</p>
+		        </div>
+		        <div class="card-action">
+		          <a href="#">This is a link</a>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
 	{{/each}}
 </ul>
