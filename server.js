@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 
 //app.use(express.static(path.join(__dirname, 'app/public')));
-app.use(express.static(path.normalize(path.join(__dirname, 'app/public'))));
+app.use(express.static(path.normalize(path.join(__dirname, 'public'))));
 var PORT = process.env.PORT || 8080;//must use this for heroku deployment
 
 
