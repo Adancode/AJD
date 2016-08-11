@@ -1,0 +1,43 @@
+
+Helpful notes on running the app, database connection etc.
+-----------------
+For use on your localhost
+-----------------
+First make sure you have a clean sequelized database...
+>>sequelize db:migrate:undo:all
+>>sequelize db:migrate
+>>sequelize db:seed:all
+
+then you MUST edit the two tables, mentees and mentors:
+run a regular mysql query on the database you're hitting or edit using whatever mysql manager you're using
+USE mydb;
+ALTER TABLE mentees ADD created_at DATETIME;
+ALTER TABLE mentees ADD updated_at DATETIME;
+ALTER TABLE mentors ADD created_at DATETIME;
+ALTER TABLE mentors ADD updated_at DATETIME;
+
+You are adding new columns updated_at and created_at due to a bug in Sequelize.  
+This is a temporary workaround
+
+*****make sure to edit config.json if you have pulled recently*****
+
+
+-----------------
+For production use on Heroku using jawsDB database
+-----------------
+in config.json, change the fields in heroku to use whatever credentials
+go with the jawsDB database associated with the heroku app
+git add/commit/heroku push, then do whatever sequelize tasks
+you need to do.  Make sure you take out the credentials and
+replace with something innocuous then git add/commit/push again
+so as not to expose to the public.
+
+For seeding jawsDB using the command line shell on your local computer:
+heroku login and provide the correct credentials
+double check that you're in the correct area, git remote -v
+then use whatever Sequelize commands you need to but specify the environment like so--
+
+sequelize db:migrate --env heroku
+
+in the above line, heroku corresponds to the json object found in config.json, the file that 
+sequelize naturally looks for	

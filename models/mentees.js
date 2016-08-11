@@ -9,9 +9,10 @@ module.exports = function(sequelize, DataTypes) {
     photoLink: DataTypes.STRING,
     userWebLink: DataTypes.STRING,
     mentorID: DataTypes.INTEGER,
-    skillSetRequested: DataTypes.STRING    
+    skillSetRequested: DataTypes.STRING  
   }, 
   {
+    timestamps: false,
     underscored: true,
     freezeTableName: true,
     classMethods: {
@@ -19,9 +20,9 @@ module.exports = function(sequelize, DataTypes) {
         Mentees.belongsTo(models.Mentors, {
           onDelete: "CASCADE",
           foreignKey: {
-            allowNull: false
+            allowNull: true
           }
-        }
+        });
       }
     }
   });

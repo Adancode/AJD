@@ -18,7 +18,7 @@ router.get('/mentees', function(req,res) {
 });
 
 router.post('/mentees/create', function(req,res) {
-	var newMentee = {
+	var newMentee = { //from webform
 		nameFirst: req.body.nameFirst,
 		nameLast: req.body.nameLast,
 		password: req.body.password, //don't know if this is correct
@@ -35,12 +35,13 @@ router.post('/mentees/create', function(req,res) {
 			menteeID: null 
 		}
 	});
-	mentees.create(newMentee, function(data){
-		res.redirect('/mentees');
-	});
-
+	lookupMentors.then(function(data){
+		newMentee.mentorID = data[0].id; //from existing mentor database
+		var menteeReturnMentors = mentees.create(newMentee);
+		menteeReturnMentors.then(function(data){
+			res.redirect('/mentees');
+		})
+	});	
 });
-
-
 
 module.exports = router;

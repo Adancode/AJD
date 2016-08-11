@@ -22,7 +22,7 @@ var Mentees = sequelize.define('Mentees', {
     githubLink: Sequelize.STRING,
     photoLink: Sequelize.STRING,
     mentorID: Sequelize.INTEGER,
-    skillSetRequested: Sequelize.STRING    
+    skillSetRequested: Sequelize.STRING     
 },{
     underscored: true,
     freezeTableName: true,

@@ -17,13 +17,6 @@ router.get('/mentors', function(req,res) {
 	});
 });
 
-/*router.get('/mentors', function(req,res) {
-	mentors.findAll({},function(data){	
-		console.log();
-		res.render('index', {mentors: data});
-	});
-});*/
-
 router.post('/mentors/create', function(req,res) {
 	
 	var newMentor = {
@@ -44,7 +37,6 @@ router.post('/mentors/create', function(req,res) {
 	mentors.create(newMentor, function(data){//examine if needing the callback outside because of sequelize promise
 		res.redirect('/mentors');
 	});
-
 });
 
 module.exports = router;

@@ -18,16 +18,17 @@ module.exports = function(sequelize, DataTypes) {
     menteeID: DataTypes.INTEGER
   }, 
   {
+    timestamps: false,
     underscored: true,
     freezeTableName: true,
     classMethods: {
       associate: function(models) {
-        Mentees.belongsTo(models.Mentors, {
+        models.Mentees.belongsTo(models.Mentors, {
           onDelete: "CASCADE",
           foreignKey: {
-            allowNull: false
+            allowNull: true
           }
-        }
+        });
       }
     }
   });
