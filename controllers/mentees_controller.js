@@ -17,6 +17,32 @@ router.get('/mentees', function(req,res) {
 	});
 });
 
+router.get('/mentorsMatching/:skillSetRequested', function(req,res) {
+	var lookupMentors = mentors.findAll({
+		attributes:['nameFirst', 'nameLast', 'photoLink', 'githubLink','bio','userWebLink'],
+		where: {
+			$or: [{skillSet1: req.params.skillSetRequested}, {skillSet2: req.params.skillSetRequested}],
+			menteeID: null 
+		}
+	});
+	lookupMentors.then(function(data){
+	 //then is the built in function of a promise - sequelize has promises	
+		var hbsObject = {returnedMentors : data};
+		res.render('mentormatch', hbsObject);		
+
+		/*newMentee.mentorID = data[0].id; //from existing mentor database
+		*/
+	});	
+	/*var requestedMentor = req.params.matchedMentorID;
+	console.log('winning!');
+	var foundMentors = mentors.findAll({//sequelize query returning a promise
+		where: {
+			id: requestedMentor
+		},
+		attributes: ['nameFirst', 'nameLast', 'photoLink', 'githubLink','bio','userWebLink']
+	});//sequelize find just the mentor */	
+});
+
 router.post('/mentees/create', function(req,res) {
 	var newMentee = { //from webform
 		nameFirst: req.body.nameFirst,
@@ -28,20 +54,10 @@ router.post('/mentees/create', function(req,res) {
 		userWebLink: req.body.userWeblink,
 		skillSetRequested:req.body.skillSetRequested
 	}
-	var lookupMentors = mentors.findAll({
-		attributes:['nameFirst', 'id'],
-		where: {
-			$or: [{skillSet1: req.body.skillSetRequested}, {skillSet2: req.body.skillSetRequested}],
-			menteeID: null 
-		}
-	});
-	lookupMentors.then(function(data){
-		newMentee.mentorID = data[0].id; //from existing mentor database
-		var menteeReturnMentors = mentees.create(newMentee);
+	var menteeReturnMentors = mentees.create(newMentee);
 		menteeReturnMentors.then(function(data){
-			res.redirect('/mentees');
+			res.redirect('/mentorsMatching/' + req.body.skillSetRequested);
 		})
-	});	
 });
 
 module.exports = router;
