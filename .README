@@ -8,29 +8,29 @@ First make sure you have a clean sequelized database...
 >>sequelize db:migrate
 >>sequelize db:seed:all
 
-then you MUST edit the two tables, mentees and mentors:
-run a regular mysql query on the database you're hitting or edit using whatever mysql manager you're using
-USE mydb;
-ALTER TABLE mentees ADD created_at DATETIME;
-ALTER TABLE mentees ADD updated_at DATETIME;
-ALTER TABLE mentors ADD created_at DATETIME;
-ALTER TABLE mentors ADD updated_at DATETIME;
-
-You are adding new columns updated_at and created_at due to a bug in Sequelize.  
-This is a temporary workaround
-
-*****make sure to edit config.json if you have pulled recently*****
-
+*****make sure to edit config.json if you have pulled recently***********
+*****config.json needs to point to the database on your local machine****
 
 -----------------
 For production use on Heroku using jawsDB database
 -----------------
-in config.json, change the fields in heroku to use whatever credentials
+****to get the database seeded
+****edit config.json
+change the fields in the heroku object to use whatever credentials
 go with the jawsDB database associated with the heroku app
+
+you can find these under the heroku account apps page, click on jawsDB
+this will take you to the hostname, username, password, and database name you 
+must input into the appropriate fields.
+
+These do *not* get pushed to github as the credentials allow anyone to manipulate our
+database
+
 git add/commit/heroku push, then do whatever sequelize tasks
-you need to do.  Make sure you take out the credentials and
+you need to do.  
+***Make sure you take out the credentials and
 replace with something innocuous then git add/commit/push again
-so as not to expose to the public.
+so as not to expose to the public.****
 
 For seeding jawsDB using the command line shell on your local computer:
 heroku login and provide the correct credentials
@@ -41,3 +41,5 @@ sequelize db:migrate --env heroku
 
 in the above line, heroku corresponds to the json object found in config.json, the file that 
 sequelize naturally looks for	
+
+any questions can be directed to Booth
