@@ -1,330 +1,284 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Austin Jr. Developers</title>
 	<meta charset="UTF-8">
-
-	<!--Import materialize.css-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-
-	<!-- link stylesheet  -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-	
-	<!--Viewport - Let browser know website is optimized for mobile-->
+	<meta name="keywords" content="full stack developer, full stack development, MERN Stack, MEAN stack, css, javascript, mongo db, database, sequelize, sql, mysql, sequel pro, maria db, express.js, react.js, angular.js, node, node.js, ajax, api, web server, apache, linux, php">
+	<meta name="author" content="Peter Guerrero, Fatma Tarlaci, Philip Cooke, Booth Kittson">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<meta name="description" content="Local knowledge exchange for Austin’s
 	Full Stack Community. Learn what Full Stack is, get connected to industry full stack development mentors, learn full stack through tutorials, connect with a Full Stack Developer school.">
-    <meta name="keyword" content="full stack developer, full stack development, full stack dev, full stack, MERN Stack, MEAN stack, mern, mean, html, html5, css, css3, javascript, mongodb, mongo db, database, sequelize, sql, mysql, sequel pro, maria db, mariadb, queries, express, express.js, react, react.js, angular, angular.js, node, node.js, ajax, api, api's, server, web server, front end, back end, apache, linux, php">
-
-	
+	<link rel='shortcut icon' href='assets/css/images/homepage/favicon.ico' type='image/x-icon' width='32' height='32'/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">				
 </head>
 
 <body>
-<div class="white navbar-fixed">
-    <nav class="blue-grey lighten-1">
-      <div class="nav-wrapper">
-        <a href="index4.html" class="brand-logo"><img src="assets/css/images/homepage/aJd_logo_final_white.png" alt="Mean Stack" height="45%" width="45%" id="ajd_logo"></a>
-
-        <a href="index4_2.html" class="brand-logo"><img class ="animated zoomIn" src="assets/css/images/homepage/aJd_logo_final_white.png" alt="Mean Stack" height="45%" width="45%" id="ajd_logo"></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="index4.html">Home</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="gittyup.html">GittyUp</a></li>
-        </ul>
-      </div>
-    </nav>
- </div>
-
-<div class="row" id="jumbotron">
-	<div class="col s12">
-		<img class = "animated zoomIn" src="assets/css/images/homepage/aJrdevs.png" alt="Mean Stack" height="auto" width="100%" id="ajd_logo">
-			<!-- <h1>Austin Jr. Full Stack Developers</h1> -->
+	<div class="white navbar-fixed">
+		<nav class="blue-grey lighten-1">
+			<div class="nav-wrapper">
+				<a href="index4.html" class="brand-logo"><img src="assets/css/images/homepage/aJd_logo_final_white.png" alt="Mean Stack" height="45%" width="45%" id="ajd_logo"></a>
+				<a href="index4.html" class="brand-logo"><img class ="animated zoomIn" src="assets/css/images/homepage/aJd_logo_final_white.png" alt="Mean Stack" height="45%" width="45%" id="ajd_logo"></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index4.html">Home</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="gittyup.html">GittyUp</a></li>
+				</ul>
+			</div>
+		</nav>
 	</div>
-</div>
 
-
-<div class="container"> 
-	
-<!-- icon part Mentor, Find a Mentor, Resources,  -->
-	<div class="row">
-			
-		<!-- MENTEE First Card with Modal -->
-		<div class="col s4 m4" id="mentee">
-		    <div class="card blue-grey darken-1">
-		        <div class="card-content white-text">
-		            <i class="material-icons" id="icon">school</i>
-			            <div class="cardtitle">
-			              	Git Schooled
-			            </div>
-		              	<div class="cardfont">
-		              		Connect with a local Full Stack Developer to help you on your journey on becoming a kick ass Full Stack Developer.
-		              	</div>
-		        </div>
-		   <!-- Modal Trigger -->
-					<a id="open-model" class="modal-trigger waves-effect waves-light yellow darken-1 btn black-text"  href="#modal1">Sign Up</a>
-
-					  <!-- Modal Structure -->
-				<div id="modal1" class="modal modal-fixed-footer">
-					<div class="modal-content black-text">
-				<!-- place form info in here -->
-						<div class="row">
-							<form class="col s12" action="/mentees/create" method="POST">
-								<div class="row">
-									<div class="input-field col s6">
-										<input id="first_name" name="nameFirst" type="text" class="validate" aria-required="true" required>
-										<label for="first_name">First Name</label>
-									</div>
-									<div class="input-field col s6">
-										<input id="last_name" name="nameLast" type="text" class="validate" aria-required="true" required>
-										<label for="last_name">Last Name</label>
-									</div>
-								</div>
-								<div class="row">
-									<div class="input-field col s6">
-										<input id="gitHub" name="githubLink" type="text" class="validate" aria-required="true" required>
-										<label for="gitHub">gitHub</label>
-									</div>
-									<div class="input-field col s6">
-										<input id="email" name="email" type="email" class="validate" aria-required="true" required>
-										<label for="email">Email</label>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col s2 m2">
-										<input type="checkbox" id="meanStack" name="skillSetRequested" value="mean" />
-										<label for="meanStack">MEAN Stack</label>
-									</div>
-								</div>	
-								<div class="row">	
-									<div class="col s2 m2">
-										<input type="checkbox" id="mernStack" name="skillSetRequested" value="mern"/>
-										<label for="mernStack">MERN Stack</label>
-									</div>
-								</div>
-								<div class="modal-footer">
-						    		<input type="submit" class="modal-action modal-close waves-effect waves-green btn-flat" id="menteeSubmit" value="Submit">
-						    	</div>	   				  
-							</form> <!-- end of main form -->
-  						</div>	
-					</div>
-				</div>	
-		     </div>
-		</div>	
-			
-<!-- MENTOR Second Card with Modal -->
-		<div class="col s4 m4" id="mentor">
-		    <div class="card blue-grey darken-1">
-		        <div class="card-content white-text">
-		            <i class="material-icons" id="icon">groups</i>
-			           	<div class="cardtitle">Be A Mentor
-			           	</div>
-		              	<div class="cardfont">
-		              		Lend your helping hand in schooling newbies to becoming Full Stack Developers. Use your expertise to foster industry growth in Austin.
-		              	</div>
-		        </div>
-<!-- Modal Trigger -->
-		<a id="open-model2" class="modal-trigger waves-effect waves-light yellow darken-1 btn black-text"  href="#modal2">Sign Up</a>
-
- <!-- Modal Structure -->
-				<div id="modal2" class="modal modal-fixed-footer">
-					<div class="modal-content black-text">
-						<!-- place form info in here -->
-						<div class="row">
-							<form class="col s12">
-								<div class="row">
-									<div class="input-field col s6">
-										<input id="first_name" type="text" class="validate" aria-required="true" required>
-											<label for="first_name">First Name</label>
-									</div> 
-									<div class="input-field col s6">
-										<input id="last_name" type="text" class="validate" aria-required="true" required>
-											<label for="last_name">Last Name</label>
-									</div>
-								</div>
-								<div class="row">
-									<div class="input-field col s6">
-										<input id="gitHub" type="text" class="validate" aria-required="true" required>
-											<label for="gitHub">gitHub</label>
-									</div>
-									<div class="input-field col s6">
-										<input id="email" type="email" class="validate" aria-required="true" required>
-											<label for="email">Email</label>
-									</div>
-								</div>
-								<div class="row">
-			<!-- <form action="#"> -->
-									<div class="col s6 m6">
-										<input type="checkbox" id="meanStack2" />
-											<label for="meanStack2">MEAN Stack</label>
-												<div class="col s2 m2">
-													<p class="range-field">
-	     												<input type="range" id="meangrade" min="1" max="3" />
-	    											</p>
-												</div>
-									</div>
-			<!-- </form> -->
-								</div>						
-								<div class="row">
-			<!-- <form> -->	
-									<div class="col s6 m6">
-										<input type="checkbox" id="mernStack2" />
-											<label for="mernStack2">MERN Stack</label>
-												<div class="col s2 m2">
-													<p class="range-field">
-	     												<input type="range" id="merngrade" min="1" max="3" />
-	    											</p>
-    											</div>
-									</div>
-			<!-- </form>  -->
-								</div>
-								<div class="modal-footer">
-						    		<input type="submit" class="modal-action modal-close waves-effect waves-green btn-flat" id="mentorSubmit" value="Submit">
-						    	</div>	   
-							</form> <!-- end of main form -->
-  						</div>	
-					</div>
-				</div>	
-		    </div>
-		</div>
-
-	<!-- Third Card no-Modal -->
-		<div class="row">
-		    <div class="col s4 m4">
-		       	<div class="card blue-grey darken-1">
-		            <div class="card-content white-text">
-		              	<div text-align="center">
-		              		<i class="material-icons" id="icon">import_contacts</i>
-		              	</div>
-			          	<div class="cardtitle">Git Moving</div>
-		              <div class="cardfont">
-		              		Check out resources on how to get started on Full Stack Development. Connect with local meetups. Start learning JavaScript today! Click Now!
-		              </div>
-		            </div>
-	<!-- Modal Trigger -->
-				<a id="gittyup" class="modal-trigger waves-effect waves-light yellow darken-1 btn black-text" href="gittyup.html">Gitty Up</a>
-
-	 <!-- Modal Structure -->						 	
-		        </div>
-		    </div>
-      	</div>
-
-	</div>	<!-- end of cards -->	
-		<hr>
-<!-- MEAN & MERN definitions  -->
-	<div class=row id="chooseStack">
+	<div class="row" id="jumbotron">
 		<div class="col s12">
-			<p>What is a Full Stack Developer?</p>
-			<p>Software developers who are comfortable working with both back-end and front-end technologies. To be more specific, it means that the developer can work with databases, HTML, CSS, JavaScript and everything in between. Javascript technologies are gaining popularity. Two current javascript technologies are called MEAN Stack and MERN Stack. Below is a description of what eah technology stack contains.</p>
-		<div class="col s6 m6">
-			<span class="flow-text">
-				<img src="assets/css/images/homepage/mean_N_277X167.png" alt="Mean Stack" height="200" width="325">
-					<h5>MEAN Stack</h5>
-			</span>
-		</div>	
-		<div class="col s6 m6">
-			<span class="flow-text">
-				<img src="assets/css/images/homepage/mern_js_277X167.png" alt="MERN STACK" height="200" width="325">
-					<h5>MERN Stack</h5>
-			</span>
-		</div>
+			<img style ="padding-bottom:30px" class = "animated zoomIn" src="assets/css/images/homepage/aJrdevs.png" alt="Mean Stack" height="auto" width="100%" id="ajd_logo">
 		</div>
 	</div>
 
-	<hr>
-	<div class="row">
-	    <div class="col s7 push-s5"><span class="flow-text"><p>MongoDB is an open source, document-oriented database designed with both scalability and developer agility in mind. Instead of storing your data in tables and rows as you would with a relational database, in MongoDB you store JSON-like documents with dynamic schemas.</p></span></div>
-	    <div class="col s5 pull-s7" id="stacks"><span class="flow-text" ><img src="assets/css/images/homepage/MongoDB.png" alt="Mongo DB" height="85" width="300"></span></div>
-	</div>
-	<hr>
-
-	<div class="row">
-	    <div class="col s7 push-s5"><span class="flow-text"><p>Express 3.x is a light-weight web application framework to help organize your web application into an MVC architecture on the server side. You can use a variety of choices for your templating language (like EJS, Jade, and Dust.js)</p></span></div>
-	    <div class="col s5 pull-s7" id="stacks"><span class="flow-text"><img src="assets/css/images/homepage/expressJS.png" alt="Express.js" height="35" width="200"></span></div>
-	</div>
-	<hr>
-
-	<div class="row">
-	    <div class="col s7 push-s5"><span class="flow-text"><p>AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. Angular's data binding and dependency injection eliminate much of the code you would otherwise have to write.</p></span></div>
-	    <div class="col s5 pull-s7" id="stacks"><span class="flow-text"><img src="assets/css/images/homepage/AngularJS.png" alt="Angular.js" height="75" width="300"></span></div>
-	</div>
-	<hr>
-
-	<div class="row">
-	    <div class="col s7 push-s5"><span class="flow-text"><p>React (sometimes styled React.js or ReactJS) is an open-source JavaScript library providing a view for data rendered as HTML. React views are typically rendered using components that contain additional components specified as custom HTML tags.</p></span></div>
-	    <div class="col s5 pull-s7" id="stacks"><span class="flow-text"><img src="assets/css/images/homepage/reactJS.png" alt="React.js" height="75" width="300"></span></div>
-	</div>
-	<hr>
-
-	<div class="row">
-	    <div class="col s7 push-s5"><span class="flow-text"><p>Node.js is an open-source, cross-platform runtime environment for developing server-side Web applications. Although Node.js is not a JavaScript framework, many of its basic modules are written in JavaScript, and developers can write new modules in JavaScript.</p></span></div>
-	    <div class="col s5 pull-s7" id="stacks"><span class="flow-text"><img src="assets/css/images/homepage/nodeJS.png" alt="Node.js" height="65" width="300"></span></div>
+	<div class="container"> 
+		<div class="row">
+			<div class="col s4 m4" id="mentee">
+				<div class="card blue-grey darken-1">
+					<div class="card-content white-text">
+						<i class="material-icons" id="icon">school</i>
+						<div class="cardtitle">
+							Git Schooled
+						</div>
+						<div class="cardfont">
+							Connect with a local Full Stack Developer to help you on the journey to becoming an AWESOME Full Stack Developer!
+						</div>
+					</div>
+					<a id="open-model" class="modal-trigger waves-effect waves-light yellow darken-1 btn black-text"  href="#modal1">Sign Up</a>
+					<div id="modal1" class="modal modal-fixed-footer">
+						<div class="modal-content black-text">
+							<div class="row">
+								<form class="col s12" action="/mentees/create" method="POST">
+									<div class="row">
+										<div class="input-field col s6">
+											<input id="first_name" name="nameFirst" type="text" class="validate" aria-required="true" required>
+											<label for="first_name">First Name</label>
+										</div>
+										<div class="input-field col s6">
+											<input id="last_name" name="nameLast" type="text" class="validate" aria-required="true" required>
+											<label for="last_name">Last Name</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s6">
+											<input id="gitHub" name="githubLink" type="text" class="validate" aria-required="true" required>
+											<label for="gitHub">gitHub</label>
+										</div>
+										<div class="input-field col s6">
+											<input id="email" name="email" type="email" class="validate" aria-required="true" required>
+											<label for="email">Email</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s2 m2">
+											<input type="checkbox" id="meanStack" name="skillSetRequested" value="mean" />
+											<label for="meanStack">MEAN Stack</label>
+										</div>
+									</div>	
+									<div class="row">	
+										<div class="col s2 m2">
+											<input type="checkbox" id="mernStack" name="skillSetRequested" value="mern"/>
+											<label for="mernStack">MERN Stack</label>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<input type="submit" class="modal-action modal-close waves-effect waves-green btn-flat" id="menteeSubmit" value="Submit">
+									</div>	   
+								</form> 
+							</div>	
+						</div>
+					</div>	
+				</div>
+			</div>	
 			
-	</div> <!--end of master container dive -->
-	<hr>
-</div>
+			<div class="col s4 m4" id="mentor">
+				<div class="card blue-grey darken-1">
+					<div class="card-content white-text">
+						<i class="material-icons" id="icon">groups</i>
+						<div class="cardtitle">
+							Be A Mentor
+						</div>
+						<div class="cardfont">
+							Lend your helping hand in schooling newbies to becoming Full Stack Developers. Use your expertise to foster industry growth in Austin.
+						</div>
+					</div>
+					<a id="open-model2" class="modal-trigger waves-effect waves-light yellow darken-1 btn black-text"  href="#modal2">Sign Up</a>
+					<div id="modal2" class="modal modal-fixed-footer">
+						<div class="modal-content black-text">
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s6">
+											<input id="first_name" type="text" class="validate" aria-required="true" required>
+											<label for="first_name">First Name</label>
+										</div> 
+										<div class="input-field col s6">
+											<input id="last_name" type="text" class="validate" aria-required="true" required>
+											<label for="last_name">Last Name</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s6">
+											<input id="gitHub" type="text" class="validate" aria-required="true" required>
+											<label for="gitHub">gitHub</label>
+										</div>
+										<div class="input-field col s6">
+											<input id="email" type="email" class="validate" aria-required="true" required>
+											<label for="email">Email</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s6 m6">
+											<input type="checkbox" id="meanStack2" />
+											<label for="meanStack2">MEAN Stack</label>
+											<div class="col s2 m2">
+												<p class="range-field">
+													<input type="range" id="meangrade" min="1" max="3" />
+												</p>
+											</div>
+										</div>
+									</div>	
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="list-inline">
-                    <li><a href="http://stackoverflow.com/">Stack Overflow</a> <a href="http://www.github.com">GitHub</a></li>
-               	</ul>
-                <p class="copyright text-muted small" id="footer-text">Copyright &copy; Dev Factory 2016. All Rights Reserved</p>
-            </div>
-        </div>
-    </div>
-</footer>
+									<div class="row">
+										<!-- <form> -->	
+										<div class="col s6 m6">
+											<input type="checkbox" id="mernStack2" />
+											<label for="mernStack2">MERN Stack</label>
+											<div class="col s2 m2">
+												<p class="range-field">
+													<input type="range" id="merngrade" min="1" max="3" />
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<input type="submit" class="modal-action modal-close waves-effect waves-green btn-flat" id="mentorSubmit" value="Submit">
+									</div>	   
+
+								</form> 
+							</div>	
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s4 m4">
+					<div class="card blue-grey darken-1">
+						<div class="card-content white-text">
+							<div text-align="center">
+								<i class="material-icons" id="icon">import_contacts</i>
+							</div>
+							<div class="cardtitle">
+								Git Moving
+							</div>
+							<div class="cardfont">
+								Check out resources on how to get started on Full Stack Development. Connect with local meetups. Start learning JavaScript today! Click Now!
+							</div>
+						</div>
+						<a id="gittyup" class="modal-trigger waves-effect waves-light yellow darken-1 btn black-text" href="gittyup.html">Gitty Up</a>						 	
+					</div>
+				</div>
+			</div>
+		</div>	
+		<hr>
+		<div class=row id="chooseStack">
+			<div class="col s12">
+				<p>What is a Full Stack Developer?</p>
+				<p>Software developers who are comfortable working with both back-end and front-end technologies. To be more specific, it means that the developer can work with databases, HTML, CSS, JavaScript and everything in between. Javascript technologies are gaining popularity. Two current javascript technologies are called MEAN Stack and MERN Stack. Below is a description of what eah technology stack contains.</p>
+				<div class="col s6 m6">
+					<span class="flow-text">
+						<img src="assets/css/images/homepage/mean_N_277X167.png" alt="Mean Stack" height="200" width="325">
+						<h5>MEAN Stack</h5>
+					</span>
+				</div>	
+				<div class="col s6 m6">
+					<span class="flow-text">
+						<img src="assets/css/images/homepage/mern_js_277X167.png" alt="MERN STACK" height="200" width="325">
+						<h5>MERN Stack</h5>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col s7 push-s5"><span class="flow-text"><p>MongoDB is an open source, document-oriented database designed with both scalability and developer agility in mind. Instead of storing your data in tables and rows as you would with a relational database, in MongoDB you store JSON-like documents with dynamic schemas.</p></span></div>
+			<div class="col s5 pull-s7" id="stacks"><span class="flow-text" ><img src="assets/css/images/homepage/MongoDB.png" alt="Mongo DB" height="85" width="300"></span></div>
+		</div>
+		<hr>
+
+		<div class="row">
+			<div class="col s7 push-s5"><span class="flow-text"><p>Express 3.x is a light-weight web application framework to help organize your web application into an MVC architecture on the server side. You can use a variety of choices for your templating language (like EJS, Jade, and Dust.js)</p></span></div>
+			<div class="col s5 pull-s7" id="stacks"><span class="flow-text"><img src="assets/css/images/homepage/expressJS.png" alt="Express.js" height="35" width="200"></span></div>
+		</div>
+		<hr>
+
+		<div class="row">
+			<div class="col s7 push-s5"><span class="flow-text"><p>AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. Angular's data binding and dependency injection eliminate much of the code you would otherwise have to write.</p></span></div>
+			<div class="col s5 pull-s7" id="stacks"><span class="flow-text"><img src="assets/css/images/homepage/AngularJS.png" alt="Angular.js" height="75" width="300"></span></div>
+		</div>
+		<hr>
+
+		<div class="row">
+			<div class="col s7 push-s5"><span class="flow-text"><p>React (sometimes styled React.js or ReactJS) is an open-source JavaScript library providing a view for data rendered as HTML. React views are typically rendered using components that contain additional components specified as custom HTML tags.</p></span></div>
+			<div class="col s5 pull-s7" id="stacks"><span class="flow-text"><img src="assets/css/images/homepage/reactJS.png" alt="React.js" height="75" width="300"></span></div>
+		</div>
+		<hr>
+
+		<div class="row">
+			<div class="col s7 push-s5"><span class="flow-text"><p>Node.js is an open-source, cross-platform runtime environment for developing server-side Web applications. Although Node.js is not a JavaScript framework, many of its basic modules are written in JavaScript, and developers can write new modules in JavaScript.</p></span></div>
+			<div class="col s5 pull-s7" id="stacks"><span class="flow-text"><img src="assets/css/images/homepage/nodeJS.png" alt="Node.js" height="65" width="300"></span></div>
+		</div>
+		<hr>
+	</div>
 
 	
-	<!--Import Google Icon Font-->
-<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="list-inline">
+						<li><a href="http://stackoverflow.com/"><img src="assets/css/images/gittypage/icons/so.png" alt="Austin Full Stack" height="45" width="45" id="cssicon"></a> <a href="http://www.github.com"><img src="assets/css/images/gittypage/icons/github.png" alt="Austin Full Stack" height="45" width="45" id="cssicon"></a></li>
+					</ul>
+					<p class="copyright text-muted small" id="footer-text">Copyright &copy; Dev Factory 2016. All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</body>
+
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-		
-<!-- materialize js -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
-	
-<!-- js -->
+
 <script type="text/javascript" src="js/materialize.js"></script>
 <script>
 	$(document).ready(function(){
-    			// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    			// $('.modal-trigger').leanModal();
-				  			
-				// ---MODAL----
-  				$('#open-model').on("click", function(){
-   					$('#modal1').openModal();
+		$('#open-model').on("click", function(){
+			$('#modal1').openModal();
 
-  				});
-  			});
+		});
+	});
 	$(document).ready(function(){
-    			// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    			// $('.modal-trigger').leanModal();
-				  			
-				// ---MODAL----
-  				$('#open-model2').on("click", function(){
-   					$('#modal2').openModal();
-   					
-  				});
-  			});
+		$('#open-model2').on("click", function(){
+			$('#modal2').openModal();
+		});
+	});
 
-
-
-$(document).ready(function(){
-    			// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    			// $('.modal-trigger').leanModal();
-				  			
-				// ---MODAL----
-  				$('#open-model3').on("click", function(){
-   					$('#modal3').openModal();
-   					
-  				});
-  			});
+	$(document).ready(function(){
+		$('#open-model3').on("click", function(){
+			$('#modal3').openModal();
+		});
+	});
 </script>
 
-
-</body>
 </html>

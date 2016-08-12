@@ -48,6 +48,10 @@ hex
 	color:#fdd835;	
 }
 
+.center {
+	color:#fdd835;	
+}
+
 #teambanner {
 	width: 100%;
 	text-align: center;
@@ -159,7 +163,7 @@ margin-bottom: 5%;
 	display: block;
 	/*margin-left: auto;
 	margin-right: auto;*/
-	font-size: 5px;
+	font-size: 24px;
 }
 
 
@@ -181,5 +185,7 @@ background: #fafdff;
 /*display: none;*/
 }
 
-
+#footer-text{
+	color:black;
+}
 
