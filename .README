@@ -42,4 +42,16 @@ sequelize db:migrate --env heroku
 in the above line, heroku corresponds to the json object found in config.json, the file that 
 sequelize naturally looks for	
 
+-----------------
+General notes on Heroku
+-----------------
+to switch to a different Heroku app
+>>git remote rm heroku
+>>heroku git:remote -a newappname
+
+to make sure the switch happened check with 
+>>git remote -v
+
+
+
 any questions can be directed to Booth
