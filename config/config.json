@@ -1,8 +1,13 @@
 {
 	"development": {
 		"username": "root",
+<<<<<<< HEAD
 		"password": "raiders1",
 		"database": "group_test_db",
+=======
+		"password": "",
+		"database": "ajd_testing",
+>>>>>>> 7242797b853914c22bb2313e2ec02150933fea99
 		"host": "127.0.0.1",
 		"dialect": "mysql"
 	},
