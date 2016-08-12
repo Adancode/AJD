@@ -27,7 +27,7 @@
       <div class="nav-wrapper">
         <a href="index4_2.html" class="brand-logo"><img src="assets/css/images/homepage/aJd_logo_final_white.png" alt="Mean Stack" height="45%" width="45%" id="ajd_logo"></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="index4_2.html">Home</a></li>
+          <li><a href="index4.html">Home</a></li>
           <li><a href="team.html">Team</a></li>
           <li><a href="gittyup.html">GittyUp</a></li>
         </ul>
@@ -89,28 +89,28 @@
 						    <div class="modal-content black-text">
 						    <!-- place form info in here -->
 						    	<div class="row">
-											    <form class="col s12">
+											    <form class="col s12" action="/mentees/create" method="POST">
 											      <div class="row">
 											        <div class="input-field col s6">
-											          <input id="first_name" type="text" class="validate" aria-required="true" required>
+											          <input id="first_name" name="nameFirst" type="text" class="validate" aria-required="true" required>
 											          <label for="first_name">First Name</label>
 											        </div>
 											      <!-- </div>  --> 
 											      <!-- <div class="row">  --> 
 											        <div class="input-field col s6">
-											          <input id="last_name" type="text" class="validate" aria-required="true" required>
+											          <input id="last_name" name="nameLast" type="text" class="validate" aria-required="true" required>
 											          <label for="last_name">Last Name</label>
 											        </div>
 											      </div>
 											      <div class="row">
 											        <div class="input-field col s6">
-											          <input id="gitHub" type="text" class="validate" aria-required="true" required>
+											          <input id="gitHub" name="githubLink" type="text" class="validate" aria-required="true" required>
 											          <label for="gitHub">gitHub</label>
 											        </div>
 											      <!-- </div> -->
 											      <!-- <div class="row"> -->
 											        <div class="input-field col s6">
-											          <input id="email" type="email" class="validate" aria-required="true" required>
+											          <input id="email" name="email" type="email" class="validate" aria-required="true" required>
 											          <label for="email">Email</label>
 											        </div>
 											      </div>
@@ -123,7 +123,7 @@
 											      <div class="row">
 											      	<!-- <form action="#"> -->
 													    <div class="col s2 m2">
-													      <input type="checkbox" id="meanStack" />
+													      <input type="checkbox" id="meanStack" name="skillSetRequested" value="mean" />
 													      <label for="meanStack">MEAN Stack</label>
 													    </div>
 													<!-- </form> -->
@@ -132,7 +132,7 @@
 												  <div class="row">
 													<!-- <form> -->	
 														<div class="col s2 m2">
-													      <input type="checkbox" id="mernStack" />
+													      <input type="checkbox" id="mernStack" name="skillSetRequested" value="mern"/>
 													      <label for="mernStack">MERN Stack</label>
 													    </div>
 													<!-- </form>  -->
