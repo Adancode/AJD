@@ -1,8 +1,8 @@
 {
 	"development": {
 		"username": "root",
-		"password": "Generic123",
-		"database": "fresh",
+		"password": "raiders1",
+		"database": "test_group_db",
 		"host": "127.0.0.1",
 		"dialect": "mysql"
 	},
