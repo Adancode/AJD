@@ -20,6 +20,21 @@ module.exports = {
 
       },
       {
+        nameFirst: 'Archi',
+        nameLast: 'Thompson',
+        email: 'archi@coderevolution.com',
+        password: sha1('password'),
+        githubLink: 'http://github.com/archi',
+        skillSet1: 'mern',
+        skillLevel1: 3, 
+        skillSet2:'mean',
+        skillLevel2: 2,       
+        bio:'I love helping new coders discover web development.  Let me teach you the MERN stack.',
+        userWebLink:'http://comecodewithme.code',
+        mentorRating:3,
+        photoLink: 'public/images/archithompson.png'
+      },
+      {
         nameFirst: 'Cecile',
         nameLast: 'Diakonova',
         email: 'cjd@coderevolution.com',
