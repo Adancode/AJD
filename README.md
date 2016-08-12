@@ -20,13 +20,13 @@ AustinJrDev is an open source application to support junior Full Stack Developer
 
 # Motivation
 
-Our team decided to create this application thinking of those who have recently started learning coding and are overwhelmed by the amount of resources online, just like we did five months ago. Providing precise explanations for what different stack acronyms mean and how they function together, AustinJrDev offers a strong foundation for the beginners and directs them to a path they can choose. Its local platform for Austin coders makes it considerably simpler for the junior developers to connect with the amazing Austin tech community without getting overwhelmed. 
+Our team decided to create this application thinking of those who have recently started learning coding and are overwhelmed by the amount of resources online, just like we did five months ago. Providing precise explanations for what different stack acronyms mean and how they function together, AustinJrDev offers a strong foundation for beginners and helps them make an informed decision about different stack developments. Its local platform for Austin coders makes it considerably simpler for the junior developers to connect with the amazing Austin tech community and find carefully selected resources to supplement their learning. 
 
 
-# AustinJr.Developers(fullstack); Team Members
+# AustinJr.Developers(fullstack); | Team Dev Factory Members
 
-Philip Cook, Peter Guerrero, Booth Kittson, Fatma Tarlaci
-UT Austin Coding Bootcamp 2016
+Philip Cook, Peter Guerrero, Booth Kittson, Fatma Tarlaci, 
+@ UT Austin Coding Bootcamp 2016
 
 
 # License

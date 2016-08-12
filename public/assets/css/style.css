@@ -48,6 +48,10 @@ hex
 	color:#fdd835;	
 }
 
+.center {
+	color:#fdd835;	
+}
+
 #teambanner {
 	width: 100%;
 	text-align: center;
@@ -58,14 +62,18 @@ hex
 
 .teamnames{
 	font-size: 24px;
+	margin-left: 5px;
+}
+
+.card-content {
+	font-size: 17px;
+	text-align: center;
 }
 
 /*--------Gitty Up Page-------------------------------------------*/
 .right{
 	/*background-color: blue;*/
 }
-
-
 
 
 
@@ -86,7 +94,9 @@ hex
 }
 
 
-
+#footer-text{
+	text-align: center;
+}
 
 
 
@@ -133,8 +143,8 @@ margin-bottom: 5%;
 	height: 250px;
 }
 
-#cardfont {
-	font-size: 65px;
+.cardfont {
+	font-size: 15px;
 }
 .cardtitle {
 	text-align: center;
@@ -146,14 +156,14 @@ margin-bottom: 5%;
 	font-size: 75px;
 	text-align: center;
     vertical-align: middle;
-    padding-left: 35%;
+    
 }
 
 #chooseStack {
 	display: block;
 	/*margin-left: auto;
 	margin-right: auto;*/
-	font-size: 5px;
+	font-size: 24px;
 }
 
 
@@ -175,7 +185,7 @@ background: #fafdff;
 /*display: none;*/
 }
 
-
-
-
+#footer-text{
+	color:black;
+}
 
