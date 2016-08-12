@@ -14,10 +14,10 @@
 		"dialect": "mysql"
 	},
 	"heroku": {
-		"username": "jawsUsername",
+		"username": "gqctd7paosj7jcz4",
 		"password": "",
-		"database": "",
-		"host": "",
+		"database": "kr7b74t5t6l6z6lb",
+		"host": "gx97kbnhgjzh3efb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
 		"dialect": "mysql"
 	}
 }
