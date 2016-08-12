@@ -35,15 +35,10 @@ module.exports = {
       },
       skillSetRequested: {
         type: Sequelize.STRING
-      },
-      createdAt: {
-        allowNull: true,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: true,
-        type: Sequelize.DATE
       }
+    },
+    {
+      timestamps: false
     });
   },
   down: function(queryInterface, Sequelize) {

@@ -30,6 +30,7 @@ var Mentors = sequelize.define('Mentors', {
     mentorRating: Sequelize.INTEGER,
     menteeID: Sequelize.INTEGER
 },{
+  timestamps: false,
     underscored: true,
     freezeTableName: true,
     classMethods: {

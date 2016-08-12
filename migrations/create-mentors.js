@@ -50,16 +50,12 @@ module.exports = {
       menteeID: {
       allowNull: true,
       type: Sequelize.INTEGER
-      },
-      createdAt: {
-        allowNull: true,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: true,
-        type: Sequelize.DATE
-      }
-    });
+      }   
+    },
+    {
+      timestamps: false
+    }
+    );
   },
   down: function(queryInterface, Sequelize) {
     return queryInterface.dropTable('Mentors');

@@ -15,7 +15,8 @@ module.exports = {
         skillLevel2: 1, 
         bio:'Hi, I\'m Betty and I\'ve been coding since I was three.',
         userWebLink:'http://mybettyweb.com',
-        mentorRating:3
+        mentorRating:3,
+        photoLink: 'public/images/fakefemale1.png'
 
       },
       {

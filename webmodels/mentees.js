@@ -24,6 +24,7 @@ var Mentees = sequelize.define('Mentees', {
     mentorID: Sequelize.INTEGER,
     skillSetRequested: Sequelize.STRING     
 },{
+  timestamps: false,
     underscored: true,
     freezeTableName: true,
     classMethods: {
