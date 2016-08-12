@@ -18,7 +18,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 app.use('/public', express.static('public'));//this works homepage with images peter 
-app.use(express.static(path.join(__dirname, 'public'))); //this works for multiple pages when pages are placed in public folder no images peter
+//app.use(express.static(path.join(__dirname, 'public'))); //this works for multiple pages when pages are placed in public folder no images peter
 
 var homeController = require('./controllers/home_controller.js');
 var menteesController = require('./controllers/mentees_controller.js');

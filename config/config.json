@@ -1,8 +1,8 @@
 {
 	"development": {
 		"username": "root",
-		"password": "",
-		"database": "",
+		"password": "Generic123",
+		"database": "fresh",
 		"host": "127.0.0.1",
 		"dialect": "mysql"
 	},
