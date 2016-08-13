@@ -25,7 +25,7 @@ Our team decided to create this application thinking of those who have recently 
 
 # AustinJr.Developers(fullstack); | Team Dev Factory Members
 
-Philip Cook, Peter Guerrero, Booth Kittson, Fatma Tarlaci, 
+Philip Cooke, Peter Guerrero, Booth Kittson, Fatma Tarlaci, 
 @ UT Austin Coding Bootcamp 2016
 
 
