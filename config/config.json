@@ -15,7 +15,7 @@
 	},
 	"heroku": {
 		"username": "gqctd7paosj7jcz4",
-		"password": "hm8zwgrp9i1l5agp",
+		"password": "",
 		"database": "kr7b74t5t6l6z6lb",
 		"host": "gx97kbnhgjzh3efb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
 		"dialect": "mysql"
